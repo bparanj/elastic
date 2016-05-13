@@ -1,6 +1,6 @@
 <h1>Articles Search</h1>
 
-<%= form_for(search_path, method: :get) do |f| %>
+<%= form_tag(search_path, method: :get) do  %>
   <p>
     <%= text_field_tag :q, params[:q] %>
     <%= submit_tag "Search" %>
